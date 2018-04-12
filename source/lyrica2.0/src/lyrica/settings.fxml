@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9" fx:controller="lyrica.SettingsController">
+   <children>
+      <AnchorPane prefHeight="70.0" prefWidth="601.0" style="-fx-background-color: #7c43bd;;">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Settings" textFill="WHITE">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="14.0" layoutY="91.0" text="Theme Color : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXColorPicker layoutX="147.0" layoutY="89.0" />
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="137.0" ripplerFill="#f5eb14" text="Change Song Directory To Search for songs" />
+      <JFXButton buttonType="RAISED" layoutX="270.0" layoutY="89.0" ripplerFill="RED" text="Reset To Default" />
+      <Label layoutX="14.0" layoutY="213.0" text="Equalizer will be added soon :)" />
+      <JFXButton fx:id="goBackButton" layoutX="14.0" layoutY="360.0" onAction="#goBackButtonClicked" text="Go Back" />
+   </children>
+</AnchorPane>
